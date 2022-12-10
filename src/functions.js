@@ -8,7 +8,7 @@ function sayHello() {
     
     $response.replies.push({
         type: "text",
-        text: "Меня зовут евдаким",
+        text: "Меня зовут михаил",
     });
 }
 
@@ -28,7 +28,7 @@ function sayWeather() {
         method: "GET"
     });
     
-    var answer = "У вас сейчас ровно: " + weather.data.list[0].main.temp;
+    var answer = "У вас сейчас ровно: " + weather.data.list[0].main.temp + " градусов";
     
     $response.replies.push({
         type: "text",
