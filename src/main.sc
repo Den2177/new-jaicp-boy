@@ -10,7 +10,10 @@ theme: /
         intent!: /привет
         script:
             sayHello()
-
+    state: Weather
+        intent!: /погода
+        script:
+            sayWeather()
     state: Bye
         intent!: /пока
         a: Пока пока

@@ -37,6 +37,30 @@
       "refs" : [ ]
     },
     "priority" : 0
+  }, {
+    "path" : "/погода",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "какая сейчас погода"
+    }, {
+      "text" : "погода в казани"
+    }, {
+      "text" : "скажи какая сейчас погода"
+    }, {
+      "text" : "погода"
+    }, {
+      "text" : "расскажи о погоде"
+    }, {
+      "text" : "что по погоде"
+    }, {
+      "text" : "погода в казани"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
   } ],
   "entities" : [ ],
   "enabledSystemEntities" : [ "duckling.number", "duckling.time", "duckling.duration", "duckling.phone-number", "duckling.email", "duckling.url" ],
