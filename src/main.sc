@@ -1,5 +1,6 @@
 require: slotfilling/slotFilling.sc
   module = sys.zb-common
+require: functions.js
 theme: /
 
     state: Start
