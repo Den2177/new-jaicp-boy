@@ -5,11 +5,11 @@ theme: /
 
     state: Start
         q!: $regex</start>
-        a: Начнём.
-
+        a: Ну привет!
     state: Hello
         intent!: /привет
-        a: еноты захватят мир
+        script:
+            sayHello()
 
     state: Bye
         intent!: /пока
