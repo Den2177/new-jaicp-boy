@@ -1,0 +1,1 @@
+const MY_NAME = 'this is my name';
