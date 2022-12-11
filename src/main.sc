@@ -11,7 +11,6 @@ theme: /
     state: Start
         q!: $regex</start>
         script:
-            $client.wasGreeted = false;
             identifyUser()
     state: GetName
         q: (меня зовут $Name/мое имя $Name/$Name) || fromState = "/Start", onlyThisState = true
@@ -23,12 +22,13 @@ theme: /
         intent!: /погода
         a: Хорошо, назови город
     state: GetCity
-        q: (город $City|живу в $City|в $City|$City) || fromState = "/GetWeather"
+        q: (город $City/живу в $City/в $City/$City) || fromState = "/GetWeather"
         go!: /GetWeatherData
     state: GetWeatherData
         a: ищу город...
         script: 
             getWeatherData();
+        
     state: NoMatch
         event!: noMatch
         a: Я вас не понял. Повторите фразу или задайте другой вопрос
