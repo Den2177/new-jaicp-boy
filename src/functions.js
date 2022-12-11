@@ -30,6 +30,5 @@ function sendTextResponse(text) {
 function getWeatherData() {
     var $request = $jsapi.context().request;
     var $parseTree = $jsapi.context().request;
-    
-    log($parseTree._City);
+    log($parseTree._City)
 }

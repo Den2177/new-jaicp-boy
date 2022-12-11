@@ -71,39 +71,8 @@
     },
     "patterns" : [ ],
     "priority" : 0
-  }, {
-    "path" : "/город",
-    "enabled" : true,
-    "shared" : false,
-    "phrases" : [ ],
-    "classificationRules" : {
-      "refs" : [ ]
-    },
-    "patterns" : [ "(я живу в $City/мой город $City/я нахожусь в $city/город $City/$City)" ],
-    "slots" : [ {
-      "name" : "duckling.duration",
-      "entity" : "duckling.duration",
-      "required" : true,
-      "prompts" : [ ]
-    } ],
-    "priority" : 0
   } ],
-  "entities" : [ {
-    "entity" : {
-      "name" : "Город",
-      "enabled" : true,
-      "shared" : false,
-      "type" : "annotation",
-      "priority" : 1,
-      "noSpelling" : true,
-      "noMorph" : false,
-      "phoneticSearch" : false,
-      "fuzzySearch" : false,
-      "client" : false,
-      "hidden" : false
-    },
-    "records" : [ ]
-  } ],
+  "entities" : [ ],
   "enabledSystemEntities" : [ "duckling.number", "duckling.time", "duckling.duration", "duckling.phone-number", "duckling.email", "duckling.url" ],
   "spellerDictionary" : [ ],
   "systemEntities" : [ {

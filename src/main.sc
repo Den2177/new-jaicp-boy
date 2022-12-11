@@ -23,7 +23,7 @@ theme: /
         intent!: /погода
         a: Хорошо, назови город
     state: GetCity
-        q: (мой город $City/город $City/живу в $City/$City) || fromState = "/GetWeather"
+        q: (город $City|живу в $City|в $City|$City) || fromState = "/GetWeather"
         go!: /GetWeatherData
     state: GetWeatherData
         a: ищу город...
