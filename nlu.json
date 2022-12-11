@@ -55,14 +55,55 @@
       "text" : "что по погоде"
     }, {
       "text" : "погода в казани"
+    }, {
+      "text" : "погода в"
+    }, {
+      "text" : "прогноз"
+    }, {
+      "text" : "погод"
+    }, {
+      "text" : "узнать погоду"
+    }, {
+      "text" : "погоду"
     } ],
     "classificationRules" : {
       "refs" : [ ]
     },
     "patterns" : [ ],
     "priority" : 0
+  }, {
+    "path" : "/город",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ "(я живу в $City/мой город $City/я нахожусь в $city/город $City/$City)" ],
+    "slots" : [ {
+      "name" : "duckling.duration",
+      "entity" : "duckling.duration",
+      "required" : true,
+      "prompts" : [ ]
+    } ],
+    "priority" : 0
   } ],
-  "entities" : [ ],
+  "entities" : [ {
+    "entity" : {
+      "name" : "Город",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : true,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false,
+      "hidden" : false
+    },
+    "records" : [ ]
+  } ],
   "enabledSystemEntities" : [ "duckling.number", "duckling.time", "duckling.duration", "duckling.phone-number", "duckling.email", "duckling.url" ],
   "spellerDictionary" : [ ],
   "systemEntities" : [ {
